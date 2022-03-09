@@ -1,0 +1,13 @@
+{
+  "name": "pomodoro-with-arduino-multifunction-shield",
+  "dockerFile": "Dockerfile",
+  "extensions": ["ms-vscode.cpptools"],
+  "settings": {
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, ColumnLimit: 0, SortIncludes: false}",
+    "C_Cpp.updateChannel": "Insiders",
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "~/.platformio/penv/bin/pio project init --board uno --ide vscode",
+  "runArgs": ["--device=/dev/ttyACM0"],
+  "remoteUser": "user"
+}
