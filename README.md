@@ -72,5 +72,10 @@ sudo chmod o+rw /dev/ttyACM0
 - Disable auto-loop on pause.
 - Change the default minutes before playing.
 
+## License
+
+© 2022 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
+
 ---
-@2022 Jhordyess
+
+Made with 💪 by [Jhordyess](https://www.jhordyess.com/)
