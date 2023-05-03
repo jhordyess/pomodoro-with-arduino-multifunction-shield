@@ -42,31 +42,29 @@ Button| Pressed | Action
  2nd | Short | Add 2 minutes
  2nd | Long | Subtract 2 minutes
  3rd | Short or long | Reset
+ 
+## Requirements
 
-## Dev Info
+### Hardware
 
-- Arduino Uno R3
+To build this device, the following items are required:
+
+- Arduino microcontroller (Arduino UNO R3 was used)
 - Arduino Multifunction Shield (for Arduino Uno R3)
-- [Multi Function Shield Library](https://registry.platformio.org/libraries/hpsaturn/MultiFuncShield)
-- VSCode with [remote containers](https://code.visualstudio.com/docs/remote/containers) (Docker container with Ubuntu)
-- [PlatformIO Core (CLI)](https://docs.platformio.org/en/latest/core/index.html#platformio-core-cli)
 
-## My useful PlatformIO commands
+### Software
 
-```bash
-# Initialize project for Arduino Uno R3
-pio project init --board uno --ide vscode
-# Build
-pio run
-# Upload
-pio run -t upload
-# Connect to the serial port monitor
-pio device monitor
-# Enable serial port permissions
-sudo chmod o+rw /dev/ttyACM0
-```
+This project requires the following libraries to run:
 
-## TODO
+- [Multi Function Shield Library by Hpsaturn](https://registry.platformio.org/libraries/hpsaturn/MultiFuncShield)
+
+### Developer Notes
+
+- Developed using [Visual Studio Code with development containers](https://code.visualstudio.com/docs/devcontainers/containers)(optional). With custom [devcontainer](https://gist.github.com/jhordyess/07f126d2017bb99bcfca9cffc62162bc) configuration file.
+- Developed using the [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide).
+- If you are running in Linux, you could also need the correct permission ```sudo chmod o+rw /dev/ttyACM0```.
+
+## To-Do
 
 - Choose the number of Pomodoros to make.
 - Disable auto-loop on pause.
